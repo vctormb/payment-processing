@@ -1,13 +1,30 @@
-import MuiButton from '@mui/material/Button';
+import { styled } from '@mui/material/styles';
+import MuiButton, { ButtonProps } from '@mui/material/Button';
 
-export const Button = () => {
+const StyledButton = styled(MuiButton)<ButtonProps>(({ theme }) => ({
+  '&.MuiButton-root': {
+    textTransform: 'none',
+    fontWeight: 600,
+    borderRadius: theme.shape.borderRadius * 4,
+  },
+  '&.MuiButton-sizeLarge': {
+    padding: theme.spacing(2, 10),
+    fontSize: 18,
+  },
+}));
+
+type Props = Pick<ButtonProps, 'children' | 'endIcon' | 'size' | 'onClick'>;
+
+export const Button = ({ children, endIcon, size, onClick }: Props) => {
   return (
-    <MuiButton
+    <StyledButton
+      onClick={onClick}
+      size={size}
+      endIcon={endIcon}
       variant="contained"
       color="secondary"
-      sx={{ fontWeight: 600, borderRadius: 4, textTransform: 'none' }}
     >
-      Custom button
-    </MuiButton>
+      {children}
+    </StyledButton>
   );
 };

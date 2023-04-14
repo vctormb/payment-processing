@@ -5,4 +5,5 @@ export type { EmotionCache } from '@emotion/react';
 export { default as createEmotionCache } from './utils/createEmotionCache';
 
 export * from './utils/theme';
+export * from './icons';
 export * from './button';
