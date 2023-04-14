@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
-    "lint": "eslint \"**/*.ts*\" && tsc --noEmit"
+    "lint": "eslint \"**/*.ts*\" && tsc"
   },
   "dependencies": {
     "react": "^18.2.0",

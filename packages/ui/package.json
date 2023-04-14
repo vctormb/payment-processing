@@ -5,7 +5,7 @@
   "types": "./src/index.ts",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint \"**/*.ts*\" && tsc --noEmit",
+    "lint": "eslint \"**/*.ts*\" && tsc",
     "test": "jest",
     "test-watch": "jest --watch"
   },
