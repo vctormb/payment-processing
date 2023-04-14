@@ -1,7 +1,7 @@
 {
   "extends": "tsconfig/nextjs.json",
   "include": [
-    "../../packages/ui/@types/@mui/material/styles.d.ts",
+    "../../packages/ui/src/@types/@mui/material/styles.d.ts",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"

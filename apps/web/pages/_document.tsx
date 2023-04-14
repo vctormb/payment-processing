@@ -10,7 +10,7 @@ import Document, {
 import { AppType } from 'next/app';
 import { muiTheme, nunito } from '../theme';
 import { createEmotionCache } from 'ui';
-import { createEmotionServer } from 'ui/utils/createEmotionServer';
+import { createEmotionServer } from 'ui/src/utils/createEmotionServer';
 import { MyAppProps } from './_app';
 
 interface MyDocumentProps extends DocumentProps {
