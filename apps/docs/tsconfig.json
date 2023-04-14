@@ -16,6 +16,6 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src"],
+  "include": ["../../packages/ui/src/@types/@mui/material/styles.d.ts", "src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
