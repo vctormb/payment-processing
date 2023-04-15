@@ -48,7 +48,17 @@ const RadioIcon = styled('span')(({ theme }) => ({
   borderRadius: '50%',
   width: 26,
   height: 26,
+  backgroundColor: theme.palette.white.main,
+  border: `2px solid ${theme.palette.neutral.main}`,
+}));
+
+const RadioCheckedIcon = styled(RadioIcon)(({ theme }) => ({
+  position: 'relative',
+  borderRadius: '50%',
+  width: 26,
+  height: 26,
   backgroundColor: theme.palette.primary.main,
+  border: '2px solid transparent',
 }));
 
 type RadioGroupOption = {
@@ -97,7 +107,7 @@ export function RadioGroupOption({
         <MuiRadio
           icon={<RadioIcon />}
           checkedIcon={
-            <RadioIcon>
+            <RadioCheckedIcon>
               <Box
                 position="absolute"
                 component="span"
@@ -109,7 +119,7 @@ export function RadioGroupOption({
               >
                 <CheckIcon />
               </Box>
-            </RadioIcon>
+            </RadioCheckedIcon>
           }
           value={value}
           inputProps={{
