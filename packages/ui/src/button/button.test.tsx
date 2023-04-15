@@ -3,7 +3,7 @@ import { Button } from './button';
 
 describe('Button', () => {
   it('should render properly', () => {
-    render(<Button />);
+    render(<Button>Custom button</Button>);
 
     expect(screen.getByText('Custom button')).toBeInTheDocument();
   });

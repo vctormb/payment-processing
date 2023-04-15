@@ -15,7 +15,7 @@ const StyledButton = styled(MuiButton)<ButtonProps>(({ theme }) => ({
 
 type Props = Pick<ButtonProps, 'children' | 'endIcon' | 'size' | 'onClick'>;
 
-export const Button = ({ children, endIcon, size, onClick }: Props) => {
+export function Button({ children, endIcon, size, onClick }: Props) {
   return (
     <StyledButton
       onClick={onClick}
@@ -27,4 +27,4 @@ export const Button = ({ children, endIcon, size, onClick }: Props) => {
       {children}
     </StyledButton>
   );
-};
+}

@@ -44,19 +44,5 @@ export const theme: ThemeOptions = {
         disableRipple: true,
       },
     },
-    MuiButton: {
-      styleOverrides: {
-        // root: {
-        // textTransform: 'none',
-        // fontWeight: 600,
-        // borderRadius: 8,
-        // },
-        // sizeMedium: {
-        // paddingLeft: 10,
-        // px: 10,
-        // fontSize: 18,
-        // },
-      },
-    },
   },
 };

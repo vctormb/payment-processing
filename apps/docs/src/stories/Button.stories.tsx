@@ -2,7 +2,6 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { Button, FileCopyIcon } from 'ui';
 
-// More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
   title: 'Components/Button',
   component: Button,
@@ -13,7 +12,6 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Standard: Story = {
   argTypes: {
     size: {
@@ -28,12 +26,6 @@ export const Standard: Story = {
 };
 
 export const EndIcon: Story = {
-  argTypes: {
-    size: {
-      options: ['medium', 'large'],
-      control: { type: 'select' },
-    },
-  },
   args: {
     children: 'Click me',
     size: 'large',
