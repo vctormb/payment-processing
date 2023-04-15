@@ -9,3 +9,4 @@ export * from './icons';
 export * from './button';
 export * from './radio-group';
 export * from './info-tag';
+export * from './text-field';

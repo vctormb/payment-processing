@@ -82,6 +82,13 @@ export function RadioGroupOption({
   return (
     <Box
       position="relative"
+      border={(t) =>
+        `2px solid ${checked ? t.palette.primary.main : t.palette.neutral.main}`
+      }
+      marginBottom={-1}
+      zIndex={checked ? 1 : 0}
+      px={11}
+      py={11}
       sx={{
         '&:nth-of-type(1)': {
           borderTopLeftRadius: 5,
@@ -91,14 +98,11 @@ export function RadioGroupOption({
           borderBottomLeftRadius: 5,
           borderBottomRightRadius: 5,
         },
+        transition: (t) =>
+          `${t.transitions.create(['border-color'], {
+            duration: t.transitions.duration.standard,
+          })}`,
       }}
-      border={(t) =>
-        `2px solid ${checked ? t.palette.primary.main : t.palette.neutral.main}`
-      }
-      marginBottom={-1}
-      zIndex={checked ? 1 : 0}
-      px={11}
-      py={11}
     >
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Typography component="span" fontSize={24}>
