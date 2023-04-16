@@ -10,3 +10,7 @@ export * from './button';
 export * from './radio-group';
 export * from './info-tag';
 export * from './text-field';
+export * from './cpf-text-field';
+export * from './credit-card-text-field';
+export * from './credit-card-due-date-text-field';
+export * from './credit-card-cvv-text-field';

@@ -86,17 +86,20 @@ export function RadioGroupOption({
         `2px solid ${checked ? t.palette.primary.main : t.palette.neutral.main}`
       }
       marginBottom={-1}
+      bgcolor={(t) =>
+        checked ? `${t.palette.primary.lighter}` : `${t.palette.white}`
+      }
       zIndex={checked ? 1 : 0}
       px={11}
       py={11}
       sx={{
         '&:nth-of-type(1)': {
-          borderTopLeftRadius: 5,
-          borderTopRightRadius: 5,
+          borderTopLeftRadius: (t) => t.shape.borderRadius * 5,
+          borderTopRightRadius: (t) => t.shape.borderRadius * 5,
         },
         '&:last-child': {
-          borderBottomLeftRadius: 5,
-          borderBottomRightRadius: 5,
+          borderBottomLeftRadius: (t) => t.shape.borderRadius * 5,
+          borderBottomRightRadius: (t) => t.shape.borderRadius * 5,
         },
         transition: (t) =>
           `${t.transitions.create(['border-color'], {
