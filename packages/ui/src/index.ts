@@ -9,6 +9,7 @@ export * from './icons';
 export * from './button';
 export * from './radio-group';
 export * from './info-tag';
+export * from './select';
 export * from './text-field';
 export * from './cpf-text-field';
 export * from './credit-card-text-field';
