@@ -10,7 +10,7 @@ import {
   styled,
   BoxProps,
 } from '@mui/material';
-import { CheckIcon } from '../icons';
+import CheckIcon from '@mui/icons-material/Check';
 
 type RadioGroupSectionProps = {
   children: ReactNode;
@@ -122,13 +122,17 @@ export function RadioGroupOption({
                 <Box
                   position="absolute"
                   component="span"
+                  display="flex"
+                  alignItems="center"
                   top="50%"
                   right="50%"
+                  color={t => t.palette.white.main}
+                  fontSize={16}
                   sx={{
                     transform: 'translate(50%,-50%)',
                   }}
                 >
-                  <CheckIcon />
+                  <CheckIcon fontSize="inherit" />
                 </Box>
               </RadioCheckedIcon>
             }

@@ -5,7 +5,10 @@ export type { EmotionCache } from '@emotion/react';
 export { default as createEmotionCache } from './utils/createEmotionCache';
 
 export * from './utils/theme';
-export * from './icons';
+
+// icons
+export { default as FileCopyIcon } from '@mui/icons-material/FileCopy';
+export { default as CheckIcon } from '@mui/icons-material/Check';
 
 // components
 export { default as Box } from '@mui/material/Box';

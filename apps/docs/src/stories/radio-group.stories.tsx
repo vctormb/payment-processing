@@ -17,7 +17,7 @@ export const Standard: Story = {
     children: (
       <div style={{ maxWidth: '400px' }}>
         <RadioGroup.Root onChange={(e) => console.log(e.target.value)}>
-          <RadioGroup.Section title="Pix">
+          <RadioGroup.Section title="Title">
             <>
               <RadioGroup.Option
                 label="1x R$ 30.500,00"
@@ -25,12 +25,12 @@ export const Standard: Story = {
                 value="1"
               >
                 <Typography color={(t) => t.palette.primary.main}>
-                  Ganhe 3% de Cashback
+                  Earn 3% Cashback
                 </Typography>
               </RadioGroup.Option>
             </>
           </RadioGroup.Section>
-          <RadioGroup.Section title="Pix Parcelado">
+          <RadioGroup.Section title="Title">
             <RadioGroup.Option
               label="2x R$ 30.500,00"
               aria-label="2x R$ 30.500,00"
