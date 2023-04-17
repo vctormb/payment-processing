@@ -6,6 +6,10 @@ export { default as createEmotionCache } from './utils/createEmotionCache';
 
 export * from './utils/theme';
 export * from './icons';
+
+// components
+export { default as Box } from '@mui/material/Box';
+export { default as Typography } from '@mui/material/Typography';
 export * from './button';
 export * from './radio-group';
 export * from './info-tag';
@@ -15,3 +19,4 @@ export * from './cpf-text-field';
 export * from './credit-card-text-field';
 export * from './credit-card-due-date-text-field';
 export * from './credit-card-cvv-text-field';
+export * from './stepper';
