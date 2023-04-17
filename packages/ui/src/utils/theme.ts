@@ -1,6 +1,6 @@
 import { ThemeOptions } from '@mui/material/styles';
 
-const colors = {
+export const colors = {
   white: '#FFFFFF',
   green: {
     $300: '#03D69D',

@@ -87,6 +87,7 @@ export function RadioGroupOption({
   label,
   value,
   'aria-label': ariaLabel,
+  ...rest
 }: RadioGroupOptionProps) {
   const radioGroup = useRadioGroup();
 
@@ -98,6 +99,7 @@ export function RadioGroupOption({
 
   return (
     <StyledRadioGroupOption
+      {...rest}
       position="relative"
       px={11}
       py={11}
@@ -118,7 +120,7 @@ export function RadioGroupOption({
           <MuiRadio
             icon={<RadioIcon />}
             checkedIcon={
-              <RadioCheckedIcon>
+              <RadioCheckedIcon data-testid="radio-checked-option">
                 <Box
                   position="absolute"
                   component="span"
@@ -126,7 +128,7 @@ export function RadioGroupOption({
                   alignItems="center"
                   top="50%"
                   right="50%"
-                  color={t => t.palette.white.main}
+                  color={(t) => t.palette.white.main}
                   fontSize={16}
                   sx={{
                     transform: 'translate(50%,-50%)',

@@ -20,6 +20,7 @@ export const Standard: Story = {
           <RadioGroup.Section title="Title">
             <>
               <RadioGroup.Option
+              data-testid="buy-house-option"
                 label="1x R$ 30.500,00"
                 aria-label="1x R$ 30.500,00"
                 value="1"
