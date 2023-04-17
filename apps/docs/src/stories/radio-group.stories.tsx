@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { RadioGroup } from 'ui';
+import { RadioGroup, Typography } from 'ui';
 
 const meta = {
   title: 'Components/RadioGroup',
@@ -18,11 +18,17 @@ export const Standard: Story = {
       <div style={{ maxWidth: '400px' }}>
         <RadioGroup.Root onChange={(e) => console.log(e.target.value)}>
           <RadioGroup.Section title="Pix">
-            <RadioGroup.Option
-              label="1x R$ 30.500,00"
-              aria-label="1x R$ 30.500,00"
-              value="1"
-            />
+            <>
+              <RadioGroup.Option
+                label="1x R$ 30.500,00"
+                aria-label="1x R$ 30.500,00"
+                value="1"
+              >
+                <Typography color={(t) => t.palette.primary.main}>
+                  Ganhe 3% de Cashback
+                </Typography>
+              </RadioGroup.Option>
+            </>
           </RadioGroup.Section>
           <RadioGroup.Section title="Pix Parcelado">
             <RadioGroup.Option
