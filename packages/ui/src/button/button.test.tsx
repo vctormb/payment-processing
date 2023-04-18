@@ -1,9 +1,9 @@
-import { render, screen } from '@testing-library/react';
 import { Button } from './button';
+import { setup, screen } from '../test-utils';
 
 describe('Button', () => {
   it('should render properly', () => {
-    render(<Button />);
+    setup(<Button>Custom button</Button>);
 
     expect(screen.getByText('Custom button')).toBeInTheDocument();
   });

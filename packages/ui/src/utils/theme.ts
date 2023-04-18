@@ -1,9 +1,10 @@
 import { ThemeOptions } from '@mui/material/styles';
 
-const colors = {
+export const colors = {
   white: '#FFFFFF',
   green: {
     $300: '#03D69D',
+    $100: '#F4FBF9',
   },
   blue: {
     $400: '#133A6F',
@@ -21,6 +22,7 @@ export const theme: ThemeOptions = {
   palette: {
     primary: {
       main: colors.green.$300,
+      lighter: colors.green.$100,
     },
     secondary: {
       main: colors.blue.$400,
